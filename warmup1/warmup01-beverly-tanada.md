@@ -1,0 +1,79 @@
+warmup01-beverly-tanada
+================
+
+Star Wars
+=========
+
+------------------------------------------------------------------------
+
+### Kazudo Xiono
+
+> In my mind, that's what I was—Kazuda Xiono, the best starfighter pilot in the galaxy.
+
+![](https://vignette.wikia.nocookie.net/starwars/images/a/a3/Kazuda.jpg/revision/latest?cb=20180830051228)
+
+### 
+
+| Description | Value |
+|-------------|-------|
+| Species     | Human |
+| Gender      | Male  |
+| Hair color  | Black |
+| Eye color   | Brown |
+| Skin color  | Light |
+
+### 
+
+Cooking Recipe
+==============
+
+------------------------------------------------------------------------
+
+### Icebox Cake
+
+![](https://smittenkitchendotcom.files.wordpress.com/2007/01/370205584_013d1995e6_o.jpg)
+
+> An extremely easy dessert to concoct for friends or families without having to spend too much time nor effort to impress. You can make it for housewarming, to impress colleagues, or anytime ice cream seems too plain for dessert.
+
+**Ingredients**
+
+-   3 cups heavy cream
+-   3 tablespoons sugar
+-   1 tablespoon vanilla extract
+-   2 (9-ounce) packages chocolate wafer cookies
+-   Unsweetened cocoa (or chocolate shavings)
+
+**Special kitchen tools**
+
+-   Electric mixer
+
+**Steps**
+
+1.  In a large bowl, beat cream, sugar and vanilla with an electric mixer on high speed until soft peaks form.
+2.  On a flat serving plate, arrange 7 cookies side by side in a circle, keeping 1 cookie in the center.
+3.  Spread with 1/2 cup whipped cream, making a 7-inch circle. Repeat with remaining cookies and cream, making 11 layers of cookies and ending with a layer of cream (there will be a few cookies left over). Cover with plastic wrap and refrigerate overnight.
+4.  To serve, dust top lightly with cocoa powder or chocolate shavings.
+
+*P.S. You can always make your own version by making your own chocolate wafers!*
+
+[Image Source](https://smittenkitchendotcom.files.wordpress.com/2007/01/370205584_013d1995e6_o.jpg)
+
+### 
+
+Euclidian distance
+==================
+
+------------------------------------------------------------------------
+
+### Definition [\[edit\]]()
+
+------------------------------------------------------------------------
+
+The **Euclidean distance** between points **p** and **q** is the length of the [line segment]() connecting them ($\\overline{pq}$).
+
+In [Cartesian coordinates](), if **p** = (*p1, p2,..., pn*) and **q** = (*q1, q2,..., qn*) are two points in [Euclidean *n*-space](), then the distance (d) from **p** to **q**, or from **q** to **p** is given by the [Pythagorean formula:<sup>\[1\]</sup>]()
+The position of a point in a Euclidean *n*-space is a [Euclidean vector](). So, **p** and **q** may be represented as Euclidean vectors, starting from the origin of the space (initial point) with their tips (terminal points) ending at the two points. The [**Euclidean norm**](), or **Euclidean length**, or **magnitude** of a vector measures the length of the vector:<sup>\[1\]</sup>
+
+$||\\textbf{p}||= \\sqrt{p\_1^2+p\_2^2+...+p\_n^2} =\\sqrt{\\textbf{p . p}}$,
+
+where the last expression involves the [dot product]().
