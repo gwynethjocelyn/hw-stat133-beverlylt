@@ -123,7 +123,7 @@ twopt_select <- summarise(
   made = sum(shot_made_flag == 'shot_yes'),
   perc_made = made/total*100
 )
-twopt_select
+as.data.frame(twopt_select[order(-twopt_select$perc_made), ])
 ```
 
 For two pointers, Kevin Durant takes the lead for taking the most shots for the team. Approximately 70% of his shots are two-pointers, and we could see he has a strong preference to two point shots. And his efforts are impressive as well – he boasts a 60% successful two-pointers rate. On the other hand, Andre Iguodala takes the least shots compared to his fellow teammates. However, that should not serve as a bad view of him. He has the highest success rate of two-pointers compared to the other players at nearly 64%. Draymond Green seems to be weak at two-pointers, having the lowest percentage of 49.4% success rate.
@@ -137,7 +137,7 @@ threept_select <- summarise(
   made = sum(shot_made_flag == 'shot_yes'),
   perc_made = made/total*100
 )
-threept_select
+as.data.frame(threept_select[order(-threept_select$perc_made), ])
 ```
 
 On our chart of three pointers, the “Splash Brothers” are definitely called so for a reason. Thompson and Curry boasts a 42% and 40% success rate respectively, an impressive rate for any player on the NBA. Both players seem to also be better risk takers than their fellow teammates, where Thompson shoots more than double three-pointer than the next player, Kevin Durant. Draymond Green does not perform as well as the other players in three pointers as well, and he does seem to have a preference to two-pointers than to three-pointers.
@@ -150,7 +150,7 @@ allpt <- summarise(
   made = sum(shot_made_flag == 'shot_yes'),
   perc_made = made/total*100
 )
-allpt
+as.data.frame(allpt[order(-allpt$perc_made), ])
 ```
 
 Once we compile all their data together, we are able to see Kevin Durant is an agile shooter. More than half of his shots are successful, outperforming the other players overall. Green’s performance is the worse of the rest, but keeps his ground at over 40%. Iguodala’s performance shines overall as well since he is very skilled at two-pointers.
