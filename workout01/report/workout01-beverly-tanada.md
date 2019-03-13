@@ -99,40 +99,34 @@ The graph chart is appealing, but to fans who want to get to the brim of just ho
 
 ###### 2-Pointers
 
-    # A tibble: 5 x 4
-      name           total  made perc_made
-      <chr>          <int> <int>     <dbl>
-    1 Andre Iguodala   210   134      63.8
-    2 Draymond Green   346   171      49.4
-    3 Kevin Durant     643   390      60.7
-    4 Klay Thompson    640   329      51.4
-    5 Stephen Curry    563   304      54.0
+                name total made perc_made
+    1 Andre Iguodala   210  134  63.80952
+    2   Kevin Durant   643  390  60.65319
+    3  Stephen Curry   563  304  53.99645
+    4  Klay Thompson   640  329  51.40625
+    5 Draymond Green   346  171  49.42197
 
 For two pointers, Kevin Durant takes the lead for taking the most shots for the team. Approximately 70% of his shots are two-pointers, and we could see he has a strong preference to two point shots. And his efforts are impressive as well – he boasts a 60% successful two-pointers rate. On the other hand, Andre Iguodala takes the least shots compared to his fellow teammates. However, that should not serve as a bad view of him. He has the highest success rate of two-pointers compared to the other players at nearly 64%. Draymond Green seems to be weak at two-pointers, having the lowest percentage of 49.4% success rate.
 
 ###### 3-Pointers
 
-    # A tibble: 5 x 4
-      name           total  made perc_made
-      <chr>          <int> <int>     <dbl>
-    1 Andre Iguodala   161    58      36.0
-    2 Draymond Green   232    74      31.9
-    3 Kevin Durant     272   105      38.6
-    4 Klay Thompson    580   246      42.4
-    5 Stephen Curry    687   280      40.8
+                name total made perc_made
+    1  Klay Thompson   580  246  42.41379
+    2  Stephen Curry   687  280  40.75691
+    3   Kevin Durant   272  105  38.60294
+    4 Andre Iguodala   161   58  36.02484
+    5 Draymond Green   232   74  31.89655
 
 On our chart of three pointers, the “Splash Brothers” are definitely called so for a reason. Thompson and Curry boasts a 42% and 40% success rate respectively, an impressive rate for any player on the NBA. Both players seem to also be better risk takers than their fellow teammates, where Thompson shoots more than double three-pointer than the next player, Kevin Durant. Draymond Green does not perform as well as the other players in three pointers as well, and he does seem to have a preference to two-pointers than to three-pointers.
 
 ###### All Points Overall
 
-    # A tibble: 5 x 4
-      name           total  made perc_made
-      <chr>          <int> <int>     <dbl>
-    1 Andre Iguodala   371   192      51.8
-    2 Draymond Green   578   245      42.4
-    3 Kevin Durant     915   495      54.1
-    4 Klay Thompson   1220   575      47.1
-    5 Stephen Curry   1250   584      46.7
+                name total made perc_made
+    1   Kevin Durant   915  495  54.09836
+    2 Andre Iguodala   371  192  51.75202
+    3  Klay Thompson  1220  575  47.13115
+    4  Stephen Curry  1250  584  46.72000
+    5 Draymond Green   578  245  42.38754
 
 Once we compile all their data together, we are able to see Kevin Durant is an agile shooter. More than half of his shots are successful, outperforming the other players overall. Green’s performance is the worse of the rest, but keeps his ground at over 40%. Iguodala’s performance shines overall as well since he is very skilled at two-pointers.
 
