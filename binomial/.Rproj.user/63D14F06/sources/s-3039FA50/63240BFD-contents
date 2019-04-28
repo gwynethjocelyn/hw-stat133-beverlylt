@@ -1,0 +1,512 @@
+#' @export
+#' @examples
+#'
+#' bin_distribution(trials = 5, prob = 0.5)
+bin_distribution <- function(trials, prob){
+dist <- matrix(nrow = trials+1, ncol = 2)
+for(i in 0:trials+1){
+dist[i,1] <- i
+dist[i,2] <- bin_probability(success = i, trials = trials, prob = prob)
+}
+dist <- as.data.frame(dist)
+names(dist) <- c("success", "probability")
+dist
+}
+bin_distribution(trials = 5, prob = 0.5)
+#' @title Binomial Distribution
+#' @description calculate probabilities about the number of successes in a fixed number of random trials performed under identical conditions
+#' @param trials number of trials
+#' @param prob probability of success
+#' @return data.frame with two classes: c("bindis", "data.frame")
+#' @export
+#' @examples
+#'
+#' bin_distribution(trials = 5, prob = 0.5)
+bin_distribution <- function(trials, prob){
+dist <- matrix(nrow = trials+1, ncol = 2)
+for(i in 1:trials+1){
+dist[i,1] <- i-1
+dist[i,2] <- bin_probability(success = i-1, trials = trials, prob = prob)
+}
+dist <- as.data.frame(dist)
+names(dist) <- c("success", "probability")
+dist
+}
+bin_distribution(trials = 5, prob = 0.5)
+# probability of getting 2 successes in 5 trials
+# (assuming prob of success = 0.5)
+bin_probability(success = 2, trials = 5, prob = 0.5)
+bin_probability(success = 0, trials = 5, prob = 0.5)
+bin_probability(success = 55, trials = 100, prob = 0.45)
+# probability of getting 2 successes in 5 trials
+# (assuming prob of success = 0.5)
+bin_probability(success = 2, trials = 5, prob = 0.5)
+bin_probability(success = 0:2, trials = 5, prob = 0.5)
+bin_probability(success = 55, trials = 100, prob = 0.45)
+#' @title Binomial Distribution
+#' @description calculate probabilities about the number of successes in a fixed number of random trials performed under identical conditions
+#' @param trials number of trials
+#' @param prob probability of success
+#' @return data.frame with two classes: c("bindis", "data.frame")
+#' @export
+#' @examples
+#'
+#' bin_distribution(trials = 5, prob = 0.5)
+bin_distribution <- function(trials, prob){
+dist <- matrix(nrow = trials+1, ncol = 2)
+for(i in 1:trials+1){
+dist[i,1] <- i-1
+dist[i,2] <- bin_probability(success = 0:trials, trials = trials, prob = prob)[i]
+}
+dist <- as.data.frame(dist)
+names(dist) <- c("success", "probability")
+dist
+}
+bin_distribution(trials = 5, prob = 0.5)
+# probability of getting 2 successes in 5 trials
+# (assuming prob of success = 0.5)
+bin_probability(success = 2, trials = 5, prob = 0.5)
+bin_probability(success = 0:2, trials = 5, prob = 0.5)[1]
+bin_probability(success = 55, trials = 100, prob = 0.45)
+# probability of getting 2 successes in 5 trials
+# (assuming prob of success = 0.5)
+bin_probability(success = 2, trials = 5, prob = 0.5)
+bin_probability(success = 0:2, trials = 5, prob = 0.5)[2]
+bin_probability(success = 55, trials = 100, prob = 0.45)
+# probability of getting 2 successes in 5 trials
+# (assuming prob of success = 0.5)
+bin_probability(success = 2, trials = 5, prob = 0.5)
+bin_probability(success = 0:2, trials = 5, prob = 0.5)[3]
+bin_probability(success = 55, trials = 100, prob = 0.45)
+#' @title Binomial Distribution
+#' @description calculate probabilities about the number of successes in a fixed number of random trials performed under identical conditions
+#' @param trials number of trials
+#' @param prob probability of success
+#' @return data.frame with two classes: c("bindis", "data.frame")
+#' @export
+#' @examples
+#'
+#' bin_distribution(trials = 5, prob = 0.5)
+bin_distribution <- function(trials, prob){
+dist <- matrix(nrow = trials+1, ncol = 2)
+for(i in 1:trials+1){
+dist[i,1] <- i-1
+dist[i,2] <- bin_probability(success = 0:trials, trials = trials, prob = prob)[i]
+}
+row.names(dist) <- c("success", "probability")
+dist
+}
+bin_distribution(trials = 5, prob = 0.5)
+#' @title Binomial Distribution
+#' @description calculate probabilities about the number of successes in a fixed number of random trials performed under identical conditions
+#' @param trials number of trials
+#' @param prob probability of success
+#' @return data.frame with two classes: c("bindis", "data.frame")
+#' @export
+#' @examples
+#'
+#' bin_distribution(trials = 5, prob = 0.5)
+bin_distribution <- function(trials, prob){
+dist <- matrix(nrow = trials+1, ncol = 2)
+for(i in 1:trials+1){
+dist[i,1] <- i-1
+dist[i,2] <- bin_probability(success = 0:trials, trials = trials, prob = prob)[i]
+}
+col.names(dist) <- c("success", "probability")
+dist
+}
+bin_distribution(trials = 5, prob = 0.5)
+#' @title Binomial Distribution
+#' @description calculate probabilities about the number of successes in a fixed number of random trials performed under identical conditions
+#' @param trials number of trials
+#' @param prob probability of success
+#' @return data.frame with two classes: c("bindis", "data.frame")
+#' @export
+#' @examples
+#'
+#' bin_distribution(trials = 5, prob = 0.5)
+bin_distribution <- function(trials, prob){
+dist <- matrix(nrow = trials+1, ncol = 2)
+for(i in 1:trials+1){
+dist[i,1] <- i-1
+dist[i,2] <- bin_probability(success = 0:trials, trials = trials, prob = prob)[i]
+}
+colnames(dist) <- c("success", "probability")
+dist
+}
+bin_distribution(trials = 5, prob = 0.5)
+#' @title Binomial Distribution
+#' @description calculate probabilities about the number of successes in a fixed number of random trials performed under identical conditions
+#' @param trials number of trials
+#' @param prob probability of success
+#' @return data.frame with two classes: c("bindis", "data.frame")
+#' @export
+#' @examples
+#'
+#' bin_distribution(trials = 5, prob = 0.5)
+bin_distribution <- function(trials, prob){
+dist <- matrix(nrow = trials+1, ncol = 2)
+for(i in 1:trials+1){
+dist[i,1] <- i-1
+dist[i,2] <- bin_probability(success = 0:trials, trials = trials, prob = prob)[i]
+}
+colnames(dist) <- c("success", "probability")
+dist
+}
+bin_distribution(trials = 5, prob = 0.5)
+# probability of getting 2 successes in 5 trials
+# (assuming prob of success = 0.5)
+bin_probability(success = 2, trials = 5, prob = 0.5)
+bin_probability(success = 0:2, trials = 5, prob = 0.5)
+bin_probability(success = 55, trials = 100, prob = 0.45)
+#' @title Binomial Distribution
+#' @description calculate probabilities about the number of successes in a fixed number of random trials performed under identical conditions
+#' @param trials number of trials
+#' @param prob probability of success
+#' @return data.frame with two classes: c("bindis", "data.frame")
+#' @export
+#' @examples
+#'
+#' bin_distribution(trials = 5, prob = 0.5)
+bin_distribution <- function(trials, prob){
+dist <- matrix(nrow = trials+1, ncol = 2)
+for(i in 1:trials+1){
+dist[i,1] = i-1
+dist[i,2] = bin_probability(success = 0:trials, trials = trials, prob = prob)[i]
+}
+dist <- as.data.frame(dist)
+names(dist) <- c("success", "probability")
+dist
+}
+bin_distribution(trials = 5, prob = 0.5)
+#' @title Binomial Distribution
+#' @description calculate probabilities about the number of successes in a fixed number of random trials performed under identical conditions
+#' @param trials number of trials
+#' @param prob probability of success
+#' @return data.frame with two classes: c("bindis", "data.frame")
+#' @export
+#' @examples
+#'
+#' bin_distribution(trials = 5, prob = 0.5)
+bin_distribution <- function(trials, prob){
+dist <- matrix(nrow = trials+1, ncol = 2)
+for(i in 0:trials){
+dist[i+1,1] = i
+dist[i+1,2] = bin_probability(success = 0:trials, trials = trials, prob = prob)[i+1]
+}
+dist <- as.data.frame(dist)
+names(dist) <- c("success", "probability")
+dist
+}
+bin_distribution(trials = 5, prob = 0.5)
+bin_distribution(trials = 6, prob = 0.5)
+bin_distribution(trials = 5, prob = 0.5)
+country_climate <- data.frame(country=c("Canada", "Panama", "South Africa", "Australia"),
+climate=c("cold", "hot", "temperate", "hot/temperate"),
+temperature=c(10, 30, 18, "15"),
+north_hemisphere=c(TRUE, TRUE, FALSE, "FALSE"),
+has_kangaroo=c(FALSE, FALSE, FALSE, 1))
+str(country_climate)
+class(bin_distribution(trials = 5, prob = 0.5))
+bin_distribution(trials = 5, prob = 0.5)
+class(bin_distribution(trials = 5, prob = 0.5))
+bin_distribution(trials = 5, prob = 0.5)
+#' @title Binomial Cumulative
+#' @description calculates probability distribution and the cumulative probabilities
+#' @param trials number of trials
+#' @param prob probability of success
+#' @return  a data frame with both the probability distribution and the cumulative probabilities: sucesses in the first column, probability in the second column, and cumulative in the third column
+#' @export
+#' @examples
+#'
+#' bin_cumulative(trials = 5, prob = 0.5)
+bin_cumulative <- function(trials, prob){
+for(i in 1:trials){
+bin_distribution(trials = trials, prob = prob)$cumulative <- bin_distribution(trials = trials, prob = prob)[i] + bin_distribution(trials = trials, prob = prob)[i-1]
+}
+bin_distribution(trials = trials, prob = prob)
+}
+bin_cumulative(trials = 5, prob = 0.5)
+bin_distribution(trials = 5, prob = 0.5)[1,2]
+bin_distribution(trials = 5, prob = 0.5)
+#' @title Binomial Cumulative
+#' @description calculates probability distribution and the cumulative probabilities
+#' @param trials number of trials
+#' @param prob probability of success
+#' @return  a data frame with both the probability distribution and the cumulative probabilities: sucesses in the first column, probability in the second column, and cumulative in the third column
+#' @export
+#' @examples
+#'
+#' bin_cumulative(trials = 5, prob = 0.5)
+bin_cumulative <- function(trials, prob){
+for(i in 1:trials){
+bin_distribution(trials = trials, prob = prob)$cumulative <- bin_distribution(trials = trials, prob = prob)[i,2] + bin_distribution(trials = trials, prob = prob)[i-1,2]
+}
+bin_distribution(trials = trials, prob = prob)
+}
+bin_cumulative(trials = 5, prob = 0.5)
+#' @title Binomial Cumulative
+#' @description calculates probability distribution and the cumulative probabilities
+#' @param trials number of trials
+#' @param prob probability of success
+#' @return  a data frame with both the probability distribution and the cumulative probabilities: sucesses in the first column, probability in the second column, and cumulative in the third column
+#' @export
+#' @examples
+#'
+#' bin_cumulative(trials = 5, prob = 0.5)
+bin_cumulative <- function(trials, prob){
+for(i in 1:trials){
+table <- bin_distribution(trials = trials, prob = prob)
+table$cumulative <- table[i] + table[i+1]
+}
+bin_distribution(trials = trials, prob = prob)
+}
+bin_cumulative(trials = 5, prob = 0.5)
+#' @title Binomial Cumulative
+#' @description calculates probability distribution and the cumulative probabilities
+#' @param trials number of trials
+#' @param prob probability of success
+#' @return  a data frame with both the probability distribution and the cumulative probabilities: sucesses in the first column, probability in the second column, and cumulative in the third column
+#' @export
+#' @examples
+#'
+#' bin_cumulative(trials = 5, prob = 0.5)
+bin_cumulative <- function(trials, prob){
+for(i in 1:trials){
+table <- bin_distribution(trials = trials, prob = prob)
+table$cumulative <- table[i,2] + table[i+1,2]
+}
+bin_distribution(trials = trials, prob = prob)
+}
+bin_cumulative(trials = 5, prob = 0.5)
+#' @title Binomial Cumulative
+#' @description calculates probability distribution and the cumulative probabilities
+#' @param trials number of trials
+#' @param prob probability of success
+#' @return  a data frame with both the probability distribution and the cumulative probabilities: sucesses in the first column, probability in the second column, and cumulative in the third column
+#' @export
+#' @examples
+#'
+#' bin_cumulative(trials = 5, prob = 0.5)
+bin_cumulative <- function(trials, prob){
+for(i in 1:trials){
+table <- bin_distribution(trials = trials, prob = prob)
+table$cumulative <- table[i,2] + table[i+1,2]
+}
+table
+}
+bin_cumulative(trials = 5, prob = 0.5)
+#' @title Binomial Cumulative
+#' @description calculates probability distribution and the cumulative probabilities
+#' @param trials number of trials
+#' @param prob probability of success
+#' @return  a data frame with both the probability distribution and the cumulative probabilities: sucesses in the first column, probability in the second column, and cumulative in the third column
+#' @export
+#' @examples
+#'
+#' bin_cumulative(trials = 5, prob = 0.5)
+bin_cumulative <- function(trials, prob){
+for(i in 1:trials){
+table <- bin_distribution(trials = trials, prob = prob)
+table$cumulative[i] <- table[i,2] + table[i+1,2]
+}
+table
+}
+bin_cumulative(trials = 5, prob = 0.5)
+#' @title Binomial Cumulative
+#' @description calculates probability distribution and the cumulative probabilities
+#' @param trials number of trials
+#' @param prob probability of success
+#' @return  a data frame with both the probability distribution and the cumulative probabilities: sucesses in the first column, probability in the second column, and cumulative in the third column
+#' @export
+#' @examples
+#'
+#' bin_cumulative(trials = 5, prob = 0.5)
+bin_cumulative <- function(trials, prob){
+for(i in 1:trials+1){
+table <- bin_distribution(trials = trials, prob = prob)
+table$cumulative[i] <- table[i,2] + table[i+1,2]
+}
+table
+}
+bin_cumulative(trials = 5, prob = 0.5)
+#' @title Binomial Cumulative
+#' @description calculates probability distribution and the cumulative probabilities
+#' @param trials number of trials
+#' @param prob probability of success
+#' @return  a data frame with both the probability distribution and the cumulative probabilities: sucesses in the first column, probability in the second column, and cumulative in the third column
+#' @export
+#' @examples
+#'
+#' bin_cumulative(trials = 5, prob = 0.5)
+bin_cumulative <- function(trials, prob){
+table <- bin_distribution(trials = trials, prob = prob)
+total <- c()
+for(i in 1:trials+1){
+table <- bin_distribution(trials = trials, prob = prob)
+total[i] <- table[i,2] + table[i+1,2]
+}
+bin_distribution(trials = trials, prob = prob)$cumulative <- total
+bin_distribution(trials = trials, prob = prob)
+}
+bin_cumulative(trials = 5, prob = 0.5)
+#' @title Binomial Cumulative
+#' @description calculates probability distribution and the cumulative probabilities
+#' @param trials number of trials
+#' @param prob probability of success
+#' @return  a data frame with both the probability distribution and the cumulative probabilities: sucesses in the first column, probability in the second column, and cumulative in the third column
+#' @export
+#' @examples
+#'
+#' bin_cumulative(trials = 5, prob = 0.5)
+bin_cumulative <- function(trials, prob){
+table <- bin_distribution(trials = trials, prob = prob)
+total <- c()
+for(i in 1:trials+1){
+table <- bin_distribution(trials = trials, prob = prob)
+total[i] <- table[i,2] + table[i+1,2]
+}
+table$cumulative <- total
+table
+}
+bin_cumulative(trials = 5, prob = 0.5)
+#' @title Binomial Cumulative
+#' @description calculates probability distribution and the cumulative probabilities
+#' @param trials number of trials
+#' @param prob probability of success
+#' @return  a data frame with both the probability distribution and the cumulative probabilities: sucesses in the first column, probability in the second column, and cumulative in the third column
+#' @export
+#' @examples
+#'
+#' bin_cumulative(trials = 5, prob = 0.5)
+bin_cumulative <- function(trials, prob){
+table <- bin_distribution(trials = trials, prob = prob)
+total <- c()
+for(i in 1:trials+1){
+table <- bin_distribution(trials = trials, prob = prob)
+total[i] <- table[i,2] + table[i-1,2]
+}
+table$cumulative <- total
+table
+}
+bin_cumulative(trials = 5, prob = 0.5)
+#' @title Binomial Cumulative
+#' @description calculates probability distribution and the cumulative probabilities
+#' @param trials number of trials
+#' @param prob probability of success
+#' @return  a data frame with both the probability distribution and the cumulative probabilities: sucesses in the first column, probability in the second column, and cumulative in the third column
+#' @export
+#' @examples
+#'
+#' bin_cumulative(trials = 5, prob = 0.5)
+bin_cumulative <- function(trials, prob){
+table <- bin_distribution(trials = trials, prob = prob)
+table$cumulative <- cumsum(table$probability)
+table
+}
+bin_cumulative(trials = 5, prob = 0.5)
+length("Hello ")
+hrefs
+# href attributes
+hrefs <- xml_tables %>%
+html_nodes("a") %>%
+html_attr("href")
+library(XML)
+library(xml2)
+library(rvest)
+library(magrittr)
+library(stringr)
+basket <- "https://www.basketball-reference.com"
+gsw <- "/teams/GSW/2017.html"
+gsw_url <- paste0(basket, gsw)
+# download HTML file to your working directory
+download.file(gsw_url, 'gsw-roster-2017.html')
+# Read GSW Roster html table
+gsw_roster <- readHTMLTable('gsw-roster-2017.html')
+gsw_roster
+# Assemble url (so it fits on screen)
+basket <- "https://www.basketball-reference.com"
+bos <- "/teams/BOS/2017.html"
+bos_url <- paste0(basket, bos)
+# download HTML file to your working directory
+download.file(bos_url, 'bos-roster-2017.html')
+# Read BOS Roster html table
+bos_roster <- readHTMLTable('bos-roster-2017.html')
+bos_roster
+nba_html <- paste0(basket, "/leagues/NBA_2017.html")
+xml_doc <- read_html(nba_html)
+xml_text <- xml_doc %>% html_text()
+xml_doc %>%
+html_nodes("h2") %>%
+html_text()
+xml_doc %>%
+html_nodes("h1") %>%
+html_text()
+xml_doc %>%
+html_nodes("strong") %>%
+html_text()
+xml_doc %>%
+html_nodes("button") %>%
+html_text()
+# node with an attribute
+xml_doc %>%
+html_nodes("p.listhead") %>%
+html_text()
+xml_doc %>%
+html_nodes(xpath = '//p[@class="listhead"]') %>%
+html_text()
+xml_doc %>%
+html_nodes(xpath = '//ul[@class=""]/li/a') %>%
+html_text()
+# extracting first table
+xml_table1 <- xml_doc %>%
+html_nodes("table") %>%
+extract(1)
+class(xml_table1)
+tbl1 <- html_table(xml_table1)
+head(tbl1)
+# extracting second table
+xml_table2 <- xml_doc %>%
+html_nodes("table") %>%
+extract(2)
+# extracting second table
+xml_table2 <- xml_doc %>%
+html_nodes("table") %>%
+extract(2)
+# two html tables
+xml_tables <- xml_doc %>%
+html_nodes("table") %>%
+extract(1:2)
+# extract names of teams
+xml_tables %>%
+html_nodes("a") %>%
+html_text()
+# href attributes
+hrefs <- xml_tables %>%
+html_nodes("a") %>%
+html_attr("href")
+class(hrefs)
+hrefs
+files <- paste0(teams, "-roster-2017.csv")
+# href attributes
+hrefs <- xml_tables %>%
+html_nodes("a") %>%
+html_attr("href")
+hrefs
+teams <- str_extract(hrefs, "[:upper:]+")
+teams
+files <- paste0(teams, "-roster-2017.csv")
+files
+basket <- "https://www.basketball-reference.com"
+team <- hrefs[1]
+team_url <- paste0(basket, team)
+download.file(team_url, 'team-roster-2017.html')
+team_file <- readHTMLTable('team-roster-2017.html')
+team_file
+team_doc <- read_html(team_url)
+team_table1 <- team_doc %>%
+html_nodes("table") %>%
+extract(1)
+roster <- html_table(team_table1)
+head(roster)
+write.csv(roster,files[1])
