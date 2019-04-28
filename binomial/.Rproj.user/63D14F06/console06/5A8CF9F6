@@ -1,10 +1,0 @@
-]0;~/Desktop/Stat 133/WORKOUT/binomial[?1034hBeverlys-MacBook-Pro-2:binomial beverly$ [KBeverlys-MacBook-Pro-2:binomial beverly$ pwd
-/Users/beverly/Desktop/Stat 133/WORKOUT/binomial
-]0;~/Desktop/Stat 133/WORKOUT/binomialBeverlys-MacBook-Pro-2:binomial beverly$ /R/[K[K[Kmv /R/hello.R /R/binomial.R
-mv: rename /R/hello.R to /R/binomial.R: No such file or directory
-]0;~/Desktop/Stat 133/WORKOUT/binomialBeverlys-MacBook-Pro-2:binomial beverly$ mv R/hello.R R/binomial.R
-]0;~/Desktop/Stat 133/WORKOUT/binomialBeverlys-MacBook-Pro-2:binomial beverly$ touch tests/tet[Kstthat/test-check-binomial.R
-]0;~/Desktop/Stat 133/WORKOUT/binomialBeverlys-MacBook-Pro-2:binomial beverly$ mv vignettes/my-vignette.Rmd b[Kvg[Kignettes/Introduction[K[K[K[K[K[K[K[K[K[K[K[Ku[Kintroduction.Rmd
-touch README.md
-]0;~/Desktop/Stat 133/WORKOUT/binomialBeverlys-MacBook-Pro-2:binomial beverly$ touch README.Rmd
-]0;~/Desktop/Stat 133/WORKOUT/binomialBeverlys-MacBook-Pro-2:binomial beverly$ touch devtools-flow.R
