@@ -20,5 +20,5 @@ check_trials <- function(trials) {
 # private checker function to check to test  if an input success is a valid value for number of successes (i.e. 0 ≤ k ≤ n).
 check_success <- function(success, trials) {
   ifelse((success%%1 != 0 | success < 0), stop("\ninvalid success value"), TRUE)
-  ifelse(success > trials, stop("\n'success cannot be greater than trials"), TRUE)
+  ifelse(success > trials, stop("\nsuccess cannot be greater than trials"), TRUE)
 }
