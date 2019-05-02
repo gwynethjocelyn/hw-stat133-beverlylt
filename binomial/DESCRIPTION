@@ -8,6 +8,11 @@ Description: Provides functions to work with the binomial distribution
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
+Collate:
+    binomial.R
+    measures.R
+    private-aux.R
+    private-check.R
 Suggests: 
     testthat,
     knitr,
