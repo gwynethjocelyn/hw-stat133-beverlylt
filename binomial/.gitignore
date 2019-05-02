@@ -1,1 +1,3 @@
 inst/doc
+*.html
+*.R
