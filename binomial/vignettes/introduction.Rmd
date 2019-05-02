@@ -60,7 +60,7 @@ bin_mean(trials = 3, prob = 0.3)
 While the function `bin_variance()` will calculate the binomial distribution's variance.
 
 ```{r}
-bin_variance(trials = 3, prob = 3)
+bin_variance(trials = 3, prob = 0.3)
 ```
 
 ### Mode
